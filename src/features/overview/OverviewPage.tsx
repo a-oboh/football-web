@@ -195,7 +195,7 @@ export function OverviewPage() {
                       </h3>
                     </div>
                     <span className="font-mono text-xs text-slate-400">
-                      {comp.match_count.toLocaleString()} matches
+                      {(comp.match_count ?? 0).toLocaleString()} matches
                     </span>
                   </div>
 

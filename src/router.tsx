@@ -99,11 +99,10 @@ function RootLayout() {
           <div className="flex items-center gap-3">
             <div className="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900 px-3 py-1 text-xs font-mono">
               <span
-                className={`h-2 w-2 rounded-full ${
-                  health?.status === "ok"
+                className={`h-2 w-2 rounded-full ${health?.status === "ok"
                     ? "bg-emerald-400"
                     : "bg-amber-400 animate-pulse"
-                }`}
+                  }`}
               />
               <span className="text-slate-300">
                 API: {health?.status === "ok" ? "Online" : "Connecting..."}

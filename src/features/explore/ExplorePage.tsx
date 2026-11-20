@@ -880,7 +880,7 @@ export function ExplorePage() {
                 )}
 
                 {/* Stored Bookmaker Odds */}
-                {matchDetail.odds.length > 0 && (
+                {matchDetail.odds && matchDetail.odds.length > 0 && (
                   <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-4 space-y-3">
                     <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                       Stored Bookmaker & Market Odds ({matchDetail.odds.length})
